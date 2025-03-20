@@ -11,7 +11,6 @@ import {
 import React from 'react'
 
 export type PresetType = 'blur' | 'fade-in-blur' | 'scale' | 'fade' | 'slide'
-
 export type PerType = 'word' | 'char' | 'line'
 
 export type TextEffectProps = {
@@ -57,9 +56,7 @@ const defaultContainerVariants: Variants = {
 
 const defaultItemVariants: Variants = {
   hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-  },
+  visible: { opacity: 1 },
   exit: { opacity: 0 },
 }
 
@@ -109,6 +106,15 @@ const presetVariants: Record<
   },
 }
 
+// Helper: Unicode-aware split for characters (grapheme clusters)
+const splitGraphemes = (text: string): string[] => {
+  if (typeof Intl !== 'undefined' && Intl.Segmenter) {
+    const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' })
+    return Array.from(segmenter.segment(text), (segment) => segment.segment)
+  }
+  return Array.from(text)
+}
+
 const AnimationComponent: React.FC<{
   segment: string
   variants: Variants
@@ -130,7 +136,7 @@ const AnimationComponent: React.FC<{
       </motion.span>
     ) : (
       <motion.span className="inline-block whitespace-pre">
-        {segment.split('').map((char, charIndex) => (
+        {splitGraphemes(segment).map((char, charIndex) => (
           <motion.span
             key={`char-${charIndex}`}
             aria-hidden="true"

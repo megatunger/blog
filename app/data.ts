@@ -11,7 +11,7 @@ type WorkExperience = {
   title: string
   start: string
   end: string
-  link: string
+  link?: string
   id: string
 }
 
@@ -49,29 +49,47 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'McKinsey & Company',
+    title: 'Engineer I',
+    start: 'May 2024',
+    end: 'March 2025',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'McKinsey & Company',
+    title: 'Junior Software Engineer',
+    start: 'August 2022',
+    end: 'April 2024',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'uCall',
+    title: 'Co-Founder',
+    start: 'January 2021',
+    end: 'now',
     id: 'work3',
   },
+  {
+    company: 'SmartOSC',
+    title: 'Frontend / Mobile Developer',
+    start: 'January 2021',
+    end: 'May 2022',
+    id: 'work4',
+  },
+  {
+    company: 'Freelance',
+    title: 'Freelance Developer',
+    start: '2019',
+    end: '2022',
+    id: 'work5',
+  },
+  {
+    company: 'TEKO Viet Nam',
+    title: 'Software Engineer Intern',
+    start: 'June 2020',
+    end: 'December 2020',
+    id: 'work6',
+  }
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -100,20 +118,28 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/megatunger',
   },
   {
     label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://twitter.com/thomas_ignore',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/megatunger',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/megatunger',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const DESCRIPTION = `
+This blog is a collection of my thoughts, ideas, and experiences. I write about my journey through software engineering, some photography lessons, some travel stories, some you-may-not-know music, and some psychology or philosophy...All are random, but I hope you find something interesting.
+
+"Someday, I will connect all the dots."
+`
+
+export const TOPICS = 'Software 💻 / Photography 📸 / Traveling ✈️ / Music 🎧 / Psychology 🧠'
+
+export const EMAIL = 'contact@megatunger.com'

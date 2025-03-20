@@ -5,6 +5,7 @@ import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { DESCRIPTION } from './data'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -13,9 +14,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Nim - Personal website template',
-  description:
-    'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  title:
+    'Hoang Son Tung (Thomas Hoang) - Personal Blog - Software / Photography / Traveling / Music',
+  description: DESCRIPTION,
 }
 
 const geist = Geist({
