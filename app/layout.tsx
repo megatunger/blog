@@ -5,7 +5,7 @@ import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { DESCRIPTION } from './data'
+import { DESCRIPTION, TOPICS } from './data'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title:
-    'Hoang Son Tung (Thomas Hoang) - Personal Blog - Software / Photography / Traveling / Music',
+    `Hoang Son Tung - Personal Blog - ${TOPICS}`,
   description: DESCRIPTION,
 }
 
