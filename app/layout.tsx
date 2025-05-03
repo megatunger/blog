@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title:
-    `Hoang Son Tung - Personal Blog - ${TOPICS}`,
+    `megatunger - Personal Blog - ${TOPICS}`,
   description: DESCRIPTION,
 }
 

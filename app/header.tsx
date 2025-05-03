@@ -11,7 +11,7 @@ export function Header() {
           href="/"
           className="text-2xl font-bold text-black dark:text-white"
         >
-          Hoang Son Tung
+          megatunger
         </Link>
         <TextEffect
           as="p"

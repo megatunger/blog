@@ -81,7 +81,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Think first, Prompts after',
-    description: 'The copy-paste from Chat',
+    description: 'The virus of no-brain vibe coding needs to be stopped.',
     link: '/blog/think-first-prompts-after',
     uid: 'think-first-prompts-after',
   },
@@ -107,7 +107,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const DESCRIPTION = `
-A collection of my thoughts, ideas, and experiences."
+A collection of my thoughts, ideas, and experiences of Son Tung H."
 `
 
 export const TOPICS = 'Software, Photography, Traveling️, Music, Psychology'
